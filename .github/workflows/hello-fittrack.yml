@@ -1,7 +1,7 @@
 name: hello-fittrack
 on: [push, workflow_dispatch]   # workflow_dispatch = bouton "Run workflow" pour la démo live
 jobs:
-  hello:
+  hello-fittrack:
     runs-on: ubuntu-latest
     steps:
       - name: Saluer l'acteur
