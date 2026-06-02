@@ -1,5 +1,8 @@
 name: hello-fittrack
-on: [pull_request, workflow_dispatch]   # workflow_dispatch = bouton "Run workflow" pour la démo live
+on: # workflow_dispatch = bouton "Run workflow" pour la démo live
+  pull_request:
+    branches:
+          - master
 jobs:
   build:
     runs-on: ubuntu-latest
