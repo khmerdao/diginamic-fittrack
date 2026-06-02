@@ -1,0 +1,8 @@
+name: hello-fittrack
+on: [push, workflow_dispatch]   # workflow_dispatch = bouton "Run workflow" pour la démo live
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saluer l'acteur
+        run: echo ${{ github.actor }}
